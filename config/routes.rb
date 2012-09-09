@@ -1,4 +1,7 @@
 Benconstable::Application.routes.draw do
+  root :to => 'static#home'
+  match 'portfolio' => 'static#portfolio'
+  match 'cv' => 'static#cv'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
