@@ -11,6 +11,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'twitter'
 
 # Use Thin in Production, for Heroku
 group :production do
