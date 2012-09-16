@@ -2,7 +2,6 @@
 class StaticController < ApplicationController
     # Home page
     def home
-
     end
 
     # Portfolio page
