@@ -12,6 +12,7 @@ end
 
 gem 'jquery-rails'
 gem 'twitter'
+gem 'haml'
 
 # Use Thin in Production, for Heroku
 group :production do
