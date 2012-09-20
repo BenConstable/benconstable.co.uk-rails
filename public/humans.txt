@@ -1,0 +1,20 @@
+/* humans.txt http://humanstxt.org/ */
+
+/* TEAM */
+    Developer: Ben Constable
+    Site: http://www.benconstable.co.uk
+    Twitter: @brconstable
+    Location: Brighton, United Kingdom
+
+/* THANKS */
+    Designer: Ben Gourley
+    Site: http://bengourley.co.uk
+    Twitter: @bengourley
+    Location: Brighton, United Kingdom
+
+/* SITE */
+    Last update: 2012/03/10
+    Doctype: HTML5
+    Standards: HTML5, CSS3, Symfony2 PHP Coding Standards
+    Components: jQuery, Symfony2, LESS
+    Software: Sublime Text 2, Git, Compose, Mac OSX, Apache 2, Ubuntu, Photoshop CS4
