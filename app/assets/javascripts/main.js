@@ -5,7 +5,7 @@
  * Core scripts.
  */
 (function ($) {
-
+    
     var und = $('<div />'),
         navs = $('.header .nav li'),
         bodyClass = $('body').attr('class'),
@@ -14,7 +14,7 @@
     
     // Setup underline visuals
     und
-        .addClass("nav-underline")
+        .addClass('nav-underline')
         .width(curNav.width())
         .css('left', position.left + 500);
         
@@ -31,7 +31,7 @@
         }, 300);
     });
     
-    // move underline on mouse out
+    // Move underline on mouse out
     navs.children('a').bind('mouseout', function () {
         navs.data('hover', false);
         
