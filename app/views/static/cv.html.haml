@@ -5,4 +5,197 @@
     cv
 
 - content_for :content do
-    %h1 CV Page
+    
+    %h1 CV
+    
+    %p
+        I am a University of Sussex graduate with extensive programming experience for both desktop and web-based platforms. For the last year and a half I have worked as a professional web developer, which has given me invaluable experience of software engineering in a real-world environment. I primarily work on the backend, but also have a good skillset in a variety frontend technologies. I also have solid experience with C++, gained from building a game engine for my undergraduate dissertation.
+
+    %section.full-width
+        %h1 Education
+        
+        %ul.no-bullet
+            %li
+                %h2
+                    %span.item BSc Computer Science: First Class Honours
+                    %span.location University of Sussex
+                    %span.date 2008 - 2011
+                
+                %h3 Relevant Courses
+
+                %p
+                    Generative Creativity in Theory and Practice, Programming Paradigms, Programming for 3D, Software Engineering, Mathematics for Computer Science Applications, 3D Animation
+          
+                %h3 Dissertation - Translating a Game Engine: Improving 3D Games for the Android OS
+
+                %p
+                    My dissertation project involved porting a Java 3D game engine for the Android OS to C++. The engine  was centered around an OpenGL renderer, and also included modules for collision detection, input handling and resource loading.
+
+                %p
+                    The project was an exploration into language usage and performance on mobile devices. The resultant port showed definitive performance improvements, and also defined a framework for building games easily with C++ and Java for Android.
+
+                %p.no-bottom-margin
+                    Building a game engine in C++ was challenging, but taught me the intricacies of the language and of game engine programming. The engine is now available as <a href="https://github.com/BenConstable/Sangwin-Game-Engine" target="_blank">open source</a>, and I am currently working to improve and extend it. A more in depth description of the project can be found in my
+                    = link_to 'portfolio', portfolio_path
+                    \.
+                
+            %li
+                %h2
+                    %span.item A-Levels
+                    %span.location Chichester College
+                    %span.date 2006 - 2008
+
+                %p
+                    Mathematics - A, Physics - A, Music - B, Photography (AS-Level) - B
+
+    %section.full-width
+        %h1>Relevant Experience
+        
+        %ul.no-bullet
+            %li
+                %h2
+                    %span.item Web Developer
+                    %span.location North Laine Solutions Ltd.
+                    %span.date October 2010 - Present
+
+                %p
+                    I currently work for a digital media company based in Brighton. I am part of a small development team, and work on a variety of bespoke projects, mostly as a PHP developer.
+
+                %p
+                    After working for the company during my final year at university I was offered a full time position as a Junior Developer, and have since moved into the role of Web Developer. The role is demanding, and I am consistently given large amounts of responsibility, but the environment is relaxed and I really enjoy my work.
+
+                %p.no-bottom-margin
+                    I work mostly as a backend PHP programmer, building the core structure and functionality for most of the projects at the company. I spend a lot of time on the server, and am comfortable working with both Linux (Apache) and Windows (IIS) platforms. The small size of the company means that I regularly interface with clients, and am competent in conveying technical details in an easy-to-understand manner. I am also required to occasionally manage projects, and do so with an efficient and professional approach.
+            
+            %li
+                %h2
+                    %span.item Developer
+                    %span.location Animazoo Ltd.
+                    %span.date June 2011 - July 2011
+            
+                %p
+                    I worked as a C++ developer for a successful motion capture company. The role was unpaid, but I got the opportunity to work on redesigning and building their core motion capture software. I was involved with initial designs and code structure, and helped to layout the core of the project using the Qt framework.
+
+    %section.full-width
+        %h1 Skills
+        
+        %ul.no-bullet
+            %li
+                %h3 PHP
+
+                %ul.list
+                    %li
+                        1 and a half years industry experience in PHP (5), with experience of using the Symfony 2 MVC framework
+                    %li
+                        Experience of custom CMS development and making use of existing tools like WordPress when appropriate
+                    %li
+                        Comfortable working with a range of OAuth based APIs, such as the Facebook Graph API and various Twitter APIs
+                    %li
+                        Experience of working with ecommerce software and services, such as Magento and Google Checkout
+                    %li
+                        Good working knowledge of using PHP from the command line to build and deploy web applications
+                    %li
+                        Highly competent in working with databases in MySQL and Microsoft Access
+
+            %li  
+                %h3 C/C++
+                
+                %ul.list
+                    %li
+                        2 years C/C++ experience
+                    %li
+                        Consistently strive for maintainable, efficient and recognisable code by following best practices described in <a href="http://aristeia.com/books.html" target="_blank">Effective C++</a> (Scott Meyers) and <a href="http://en.wikipedia.org/wiki/Design_Patterns" target="_blank">Design Patterns</a> (Erich Gamma et al)
+                    %li
+                        Good understanding of using language features to build well optimised code
+                    %li
+                        Experience of working without the STL by using custom built container classes
+                    %li
+                        Solid grounding in game development through building a fully functional
+                        = link_to 'C++ game engine', portfolio_path
+            
+                %h3 Front End Web Development
+                
+                %ul.list
+                    %li
+                        Highly competent in building markup with HTML5 and CSS3, with a good understanding of browser pitfalls and graceful fallbacks to older technologies
+                    %li
+                        Firm working knowledge of both pure JavaScript and selector-based frameworks such as jQuery and Zepto.
+                    %li
+                        Comfortable building usable APIs with Ajax via Javascript and PHP
+                    %li
+                        Working knowledge of CSS-based languages such as LESS and Stylus
+                    %li
+                        Comfortable working with Markdown and other compile-to-HTML languages
+                    %li
+                        Experience of building offline web apps for iPad using SQLite and HTML5 Caching APIs
+            
+            %li
+                %h3 Other Programming Language Experience
+                
+                %ul.list
+                    %li
+                        3 years of Java experience in a variety of contexts, including standalone desktop applications, 3D graphics and web development
+                    %li
+                        Experience of pure functional programming using Haskell
+                    %li
+                        Good working knowledge of Microsoft ASP (VBScript)
+                    %li
+                        Basic understanding of serverside JavaScript using Node JS, with a keen interest in learning more
+            
+            %li
+                %h3 Server Administration
+                
+                %ul.list
+                    %li
+                        Comfortable working on a LAMP stack, including both setup and maintenance of Apache web servers from command line over SSH
+                    %li
+                        Good understanding of other LAMP-style environments (e.g. WAMP and MAMP)
+                    %li
+                        Experience of working with Windows IIS, for both PHP and ASP-based applications
+
+            %li
+                %h3 3D Graphics
+                
+                %ul.list
+                    %li
+                        Good experience of building scenegraph renderers in OpenGL/OpenGL ES for both desktop and mobile (including textures, models and lighting)
+                    %li
+                        Good understanding of 3D mathematics from both A-level and degree level courses
+                    %li
+                        Good experience of using 3DS Max for modelling, texturing, rendering and animation
+                    %li
+                        Experience of modelling and rendering in Blender
+                    %li
+                        Experience of building optimised 3D models for the web using x3dom and HTML5
+                    %li
+                        Keen interest in learning to use WebGL to build games and 3D applications in the browser
+
+            %li
+                %h3 Software Engineering
+                
+                %ul.list
+                    %li
+                        Good working knowledge of using Git for source control and <a href="https://github.com/BenConstable/Compose" target="_blank">application deployment</a>
+                    %li
+                        Experience of using unit test frameworks for development
+                    %li
+                        Competent in both program and database design using UML
+                    %li
+                        Happy using a range of IDEs and editors such as Eclipse, Dreamweaver, Netbeans, Coda, Vim and more recently Sublime Text 2
+            
+            %li
+                %h3 Other Technologies
+                
+                %ul.list
+                    %li
+                        Experience of using the Java Native Interface (JNI) to integrate C/C++ code with Java programs
+                    %li
+                        Basic experience of working with the Android OS
+                    %li
+                        Comfortable working on either Mac OSX, Linux or Windows
+
+    %section.full-width.bottom
+        %h1 Interests
+
+        %p
+            I am an avid gamer, and enjoy playing video games for both their entertainment value and technological and artistic feats. I have been playing golf since I was 10 years old, and try to play a game when I can. I love reading both fictional works (currently I'm enjoying The Complete Sherlock Holmes by Sir Arthur Conan Doyle) and Computer Science literature. I exercise regularly, and like to run when weather permits. I am also a keen musician and have played as a drummer, guitarist and bassist in a few small bands.

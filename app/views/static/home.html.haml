@@ -2,4 +2,25 @@
     home
 
 - content_for :content do
-    %h1 Home Page
+
+    %h1 I'm a programmer, mostly…
+
+    %section.full-width.bottom
+        
+        .left
+            %p
+                I am a programmer from Brighton, UK. Last year I completed a degree at the University of Sussex, where I gained a BSc Computer Science, First Class Honours.
+            
+            %p
+                I currently work as a professional web developer for a small media company in Brighton. I love keeping up with latest technologies in web development, and you can find the source for this site <a href="https://github.com/BenConstable/benconstable.co.uk" target="_blank">on Github</a>. It's built on the <a href="http://symfony.com/" target="_blank">Symfony 2</a> framework, and makes use of a selfmade PHP build tool called <a href="https://github.com/BenConstable/Compose" target="_blank">Compose</a>.
+    
+        .right
+            %p
+                My other passion lies in video games. This harks back to the early days of the N64 (F-Zero X, anyone?), which ensured I was hooked enough to carry on playing incessantly for about 15 years and take a stab at making games myself. Because of this, I am an avid C++ programmer and am currently working on a <a href="https://github.com/BenConstable/Sangwin-Game-Engine" target="_blank">C++ game engine for Android</a> that I built for my university dissertation.
+
+            %p
+                If you'd like to find out more about me and what I do, have a look at my
+                = link_to 'CV', cv_path
+                and
+                = link_to 'Portfolio', portfolio_path
+                \. I can be easily contacted using the details below, and am always open to new opportunities. Feel free to <a href="https://twitter.com/#!/brconstable" target="_blank">follow me on Twitter</a>, I'll happily reciprocate the favour!
