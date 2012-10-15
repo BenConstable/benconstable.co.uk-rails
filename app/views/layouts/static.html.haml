@@ -23,7 +23,8 @@
                 %p= Twitter.user_timeline('brconstable').first.text
             %p
                 %a{:href => 'https://twitter.com/#!/brconstable', :target => '_blank'} @brconstable
-            %p.date days ago
+            %p.date
+                = ago(Twitter.user_timeline('brconstable').first.created_at)
         
         %section.contact
             %h1 Contact details
