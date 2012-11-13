@@ -20,11 +20,12 @@
 
             .tweet
                 .arrow
-                %p= Twitter.user_timeline('brconstable').first.text
+                %p
+                    != latest_tweet
             %p
                 %a{:href => 'https://twitter.com/#!/brconstable', :target => '_blank'} @brconstable
             %p.date
-                = ago(Twitter.user_timeline('brconstable').first.created_at)
+                = latest_tweet_time
         
         %section.contact
             %h1 Contact details
