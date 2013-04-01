@@ -1,0 +1,11 @@
+- content_for :title do
+  404 Page Not Found
+
+- content_for :content do
+  %h1 404 Page Not Found
+  %p
+    :markdown
+      Looks like the page you were looking for doesn't exist. Head over to the
+      [home page](#{root_path}), or use the navigation above to find what you're looking for.
+
+= parent_layout 'base'

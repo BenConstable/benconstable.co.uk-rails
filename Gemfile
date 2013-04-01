@@ -14,6 +14,7 @@ gem 'jquery-rails'
 gem 'twitter'
 gem 'haml'
 gem 'dalli'
+gem 'maruku'
 
 # Use Thin in Production, for Heroku
 group :production do

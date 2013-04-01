@@ -66,6 +66,10 @@ module Benconstable
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
 
+    # Use Dalli for Memcache caching
     config.cache_store = :dalli_store
+
+    # Use the standard router for Exception handling
+    config.exceptions_app = self.routes
   end
 end
