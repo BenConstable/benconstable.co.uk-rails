@@ -1,42 +1,40 @@
 !!! 5
 %html
+  %head
+    %title
+      = content_for?(:title) ? yield(:title) + ' | ' : ''
+      Ben Constable - Programmer
     
-    %head
-        %title
-            = content_for?(:title) ? yield(:title) + ' | ' : ''
-            Ben Constable - Programmer
-        
-        %meta{:charset => 'UTF-8'}
-        %meta{:name => 'description', :content => 'Ben Constable, experienced web and games programmer from Brighton, UK'}
-        %meta{:name => 'keywords', :content => 'Ben Constable, Ben, Constable, web, games, programmer, Brighton, UK, video games, C++, PHP'}
+    %meta{:charset => 'UTF-8'}
+    %meta{:name => 'description', :content => 'Ben Constable, experienced programmer from Brighton, UK'}
+    %meta{:name => 'keywords', :content => 'Ben Constable, Ben, Constable, programmer, web, games, Brighton, UK, video games, C++, PHP, Javascript'}
+    
+    %link{:href => 'favicon.ico', :rel => 'shortcut icon'}
+    %link{:href => 'humans.txt', :rel => 'author'}
 
-        %link{:href => 'favicon.ico', :rel => 'shortcut icon'}
-        %link{:href => 'humans.txt', :rel => 'author'}
+    = stylesheet_link_tag 'application', :media => 'all'
+    = yield :stylesheets
 
-        = stylesheet_link_tag 'application', :media => 'all'
-        = yield :stylesheets
+    /[if lt IE 9]
+      = javascript_include_tag 'http://html5shim.googlecode.com/svn/trunk/html5.js'
 
-        /[if lt IE 9]
-            = javascript_include_tag 'http://html5shim.googlecode.com/svn/trunk/html5.js'
+  %body{:class => yield(:body_class)}
+    = yield :body
 
-    %body{:class => yield(:body_class)}
+    - if Rails.env == 'production'
+      :javascript
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-28221222-1']);
+        _gaq.push(['_setDomainName', 'benconstable.co.uk']);
+        _gaq.push(['_trackPageview']);
 
-        = yield :body
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
 
-        - if Rails.env == 'production'
-            :javascript
-                var _gaq = _gaq || [];
-                _gaq.push(['_setAccount', 'UA-28221222-1']);
-                _gaq.push(['_setDomainName', 'benconstable.co.uk']);
-                _gaq.push(['_trackPageview']);
-                
-                (function() {
-                    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-                    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-                    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-                })();
-
-        = javascript_include_tag 'application'
-        = yield :javascripts
-
-/ Copyright &copy; 2011 Ben Constable http://www.benconstable.co.uk
+    = javascript_include_tag 'application'
+    = yield :javascripts
+    
+/ Copyright &copy; 2013 Ben Constable http://www.benconstable.co.uk

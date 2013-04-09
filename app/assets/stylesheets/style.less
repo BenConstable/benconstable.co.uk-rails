@@ -14,14 +14,14 @@
 // Fonts
 //
 @font-face {
-    font-family: "BebasNeueRegular";
-    src: font-url("bebas-neue/BebasNeue-webfont.eot");
-    src: font-url("bebas-neue/BebasNeue-webfont.eot?#iefix") format("embedded-opentype"),
-         font-url("bebas-neue/BebasNeue-webfont.woff") format("woff"),
-         font-url("bebas-neue/BebasNeue-webfont.ttf") format("truetype"),
-         font-url("bebas-neue/BebasNeue-webfont.svg#BebasNeueRegular") format("svg");
-    font-weight: normal;
-    font-style: normal;
+  font-family: "BebasNeueRegular";
+  src: font-url("bebas-neue/BebasNeue-webfont.eot");
+  src: font-url("bebas-neue/BebasNeue-webfont.eot?#iefix") format("embedded-opentype"),
+       font-url("bebas-neue/BebasNeue-webfont.woff") format("woff"),
+       font-url("bebas-neue/BebasNeue-webfont.ttf") format("truetype"),
+       font-url("bebas-neue/BebasNeue-webfont.svg#BebasNeueRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 
 
@@ -29,46 +29,46 @@
 // Utilities
 //
 .container {
-    display: block;
-    width: 880px;
-    margin: 0 auto;
-    position: relative;
-    overflow: hidden;
+  display: block;
+  width: 880px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
 }
 
 .nav {
-    list-style-type: none;
-    overflow: hidden;
+  list-style-type: none;
+  overflow: hidden;
 
-    li {
-        float: left;
-        display: inline;
-    }
+  li {
+    float: left;
+    display: inline;
+  }
 }
 
 .clearfix:after {
-    content: ".";
-    display: block;
-    clear: both;
-    visibility: hidden;
-    line-height: 0;
-    height: 0;
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
 }
  
 .clearfix {
-    display: inline-block;
+  display: inline-block;
 }
  
 html[xmlns] .clearfix {
-    display: block;
+  display: block;
 }
  
 * html .clearfix {
-    height: 1%;
+  height: 1%;
 }
 
 .clear {
-    clear: both;
+  clear: both;
 }
 
 
@@ -76,34 +76,34 @@ html[xmlns] .clearfix {
 // Core
 //
 body {
-    background: image-url("bg.png") repeat #242323;
-    font-family: @lucida;
-    color: #b4b4b4;
-    font-size: 14px;
-    line-height: 1.4em;
+  background: image-url("bg.png") repeat #242323;
+  font-family: @lucida;
+  color: #b4b4b4;
+  font-size: 14px;
+  line-height: 1.4em;
 }
 
 h1 {
-    font-size: 40px;
-    line-height: 40px;
+  font-size: 40px;
+  line-height: 40px;
 }
 
 p {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 a {
-    color: @blue;
-    #utils > .transition('color, text-shadow', ease-in-out, 300ms);
+  color: @blue;
+  #utils > .transition('color, text-shadow', ease-in-out, 300ms);
 
-    &:hover {
-        text-shadow: 0px 0px 3px @blue;
-    }
+  &:hover {
+    text-shadow: 0px 0px 3px @blue;
+  }
 }
 
 // selection colours
 ::selection, ::-moz-selection {
-    background: #547226;
+  background: #547226;
 }
 
 
@@ -111,62 +111,62 @@ a {
 // Header
 //
 .header {
-    margin-top: 100px;
-    position: relative;
-    font-family: @monaco;
-    height: 100px;  
+  margin-top: 100px;
+  position: relative;
+  font-family: @monaco;
+  height: 100px;  
 
-    .logo {
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
+  .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 
-    p {
-        position: absolute;
-        bottom: 15px;
-        left: 80px;
-        font-size: 12px;
-        color: @lime;
-    }
+  p {
+    position: absolute;
+    bottom: 15px;
+    left: 80px;
+    font-size: 12px;
+    color: @lime;
+  }
 
-    .nav {
-        position: absolute;
-        top: 0;
-        left: 500px;
-        height: 100px;
+  .nav {
+    position: absolute;
+    top: 0;
+    left: 500px;
+    height: 100px;
 
-        li {
-            line-height: 100px;
-            margin-right: 60px;
-            position: relative;
-            
-            a {
-                text-decoration: none;
-                color: @offWhite;
-                padding: 10px 0;
+    li {
+      line-height: 100px;
+      margin-right: 60px;
+      position: relative;
+      
+      a {
+        text-decoration: none;
+        color: @offWhite;
+        padding: 10px 0;
 
-                &:hover {
-                    color: @lime;
-                    text-shadow: 0px 0px 2px @lime;
-                }
-            }
+        &:hover {
+          color: @lime;
+          text-shadow: 0px 0px 2px @lime;
         }
+      }
     }
+  }
 
-    .nav-underline {
-        position: absolute;
-        top: 65px;
-        height: 15px;
-        background: image-url("nav-underline.png") repeat-x transparent;
-    }
+  .nav-underline {
+    position: absolute;
+    top: 65px;
+    height: 15px;
+    background: image-url("nav-underline.png") repeat-x transparent;
+  }
 }
 
 // on states
 body.home .header .nav li.home a,
 body.cv .header .nav li.cv a,
 body.portfolio .header .nav li.portfolio a {
-    color: @lime;
+  color: @lime;
 }
 
 
@@ -174,167 +174,167 @@ body.portfolio .header .nav li.portfolio a {
 // Main content
 //
 .main-content-wrapper {
-    width: 100%;
-    background-color: @darkGrey;
-    margin: 50px 0;
-    border-top: 1px solid #3a3a3a;
-    border-bottom: 1px solid #3a3a3a;
-    #utils > .box-shadow(0px 0px 1px #111);
+  width: 100%;
+  background-color: @darkGrey;
+  margin: 50px 0;
+  border-top: 1px solid #3a3a3a;
+  border-bottom: 1px solid #3a3a3a;
+  #utils > .box-shadow(0px 0px 1px #111);
 }
 
 .main-content {
-    padding: 50px 0;
-    overflow: hidden;
+  padding: 50px 0;
+  overflow: hidden;
 
-    .left {
-        width: 380px;
-        float: left;
-        clear: left;
+  .left {
+    width: 380px;
+    float: left;
+    clear: left;
+  }
+
+  .right {
+    width: 380px;
+    float: right;
+    clear: right;
+  }
+
+  .full-width {
+    width: 100%;
+    float: left;
+    clear: both;
+  }
+
+  // ensure correct margin at bottom of main content
+  .bottom {
+    margin-bottom: -25px;
+  }
+
+  h1 {
+    font-family: @bebas;
+    color: @offWhite;
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-shadow: 0 1px 1px #000;
+    margin-bottom: 20px;
+  }
+
+  p {
+    margin-bottom: 25px;
+  }
+
+  a {
+    color: @lime;
+
+    &:hover {
+      text-decoration: underline;
+      text-shadow: 0px 0px 3px @lime;
     }
+  }
 
-    .right {
-        width: 380px;
-        float: right;
-        clear: right;
-    }
-
-    .full-width {
-        width: 100%;
-        float: left;
-        clear: both;
-    }
-
-    // ensure correct margin at bottom of main content
-    .bottom {
-        margin-bottom: -25px;
-    }
-
-    .no-bottom-margin {
-        margin-bottom: 0px;
-    }
-
+  section {
     h1 {
-        font-family: @bebas;
-        color: @offWhite;
-        font-weight: normal;
-        letter-spacing: 1px;
-        text-shadow: 0 1px 1px #000;
-        margin-bottom: 20px;
+      font-size: 28px;
+      line-height: 28px;
+      margin-bottom: 15px;
+      padding: 7px 0;
+      border-top: 1px solid #3a3a3a;
+      border-bottom: 1px solid #3a3a3a;
+      #utils > .box-shadow(0px 0px 1px #222);
     }
 
-    p {
-        margin-bottom: 25px;
+    h2 {
+      font-family: @monaco;
+      font-size: 16px;
+      line-height: 16px;
+      font-weight: normal;
+      margin-top: 30px;
+      margin-bottom: 14px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #3A3A3A; 
+      float: left;
+      width: 100%;
+
+      span {
+        float: left;
+        display: block;
+        margin-right: 20px;
+
+        &.item {
+          color: @lime;
+        }
+
+        &.date {
+          float: right;
+          margin-right: 0;
+          background-color: #242323;
+          border: 1px dashed #B4B4B4;
+          padding: 5px;
+          margin-top: -2px;
+          font-size: 12px;
+          line-height: 12px;
+          #utils > .border-radius(5px);
+        }
+      }
     }
 
-    a {
-        color: @lime;
-
-        &:hover {
-            text-decoration: underline;
-            text-shadow: 0px 0px 3px @lime;
-        }
+    h3 {
+      font-size: 15px;
+      line-height: 15px;
+      font-weight: normal;
+      color: #fff;
+      margin-bottom: 10px;
     }
 
-    section {
-        h1 {
-            font-size: 28px;
-            line-height: 28px;
-            margin-bottom: 15px;
-            padding: 7px 0;
-            border-top: 1px solid #3a3a3a;
-            border-bottom: 1px solid #3a3a3a;
-            #utils > .box-shadow(0px 0px 1px #222);
-        }
-
-        h2 {
-            font-family: @monaco;
-            font-size: 16px;
-            line-height: 16px;
-            font-weight: normal;
-            margin-top: 30px;
-            margin-bottom: 14px;
-            padding-bottom: 10px;
-            border-bottom: 1px solid #3A3A3A; 
-            float: left;
-            width: 100%;
-
-            span {
-                float: left;
-                display: block;
-                margin-right: 20px;
-
-                &.item {
-                    color: @lime;
-                }
-
-                &.date {
-                    float: right;
-                    margin-right: 0;
-                    background-color: #242323;
-                    border: 1px dashed #B4B4B4;
-                    padding: 5px;
-                    margin-top: -2px;
-                    font-size: 12px;
-                    line-height: 12px;
-                    #utils > .border-radius(5px);
-                }
-            }
-        }
-
-        h3 {
-            font-size: 15px;
-            line-height: 15px;
-            font-weight: normal;
-            color: #fff;
-            margin-bottom: 10px;
-        }
-
-        ul {
-            &.no-bullet {
-                list-style: none inside none;
-            }
-
-            &.list {
-                padding-left: 30px;
-                margin-bottom: 25px;
-            }
-
-            &.list li {
-                margin-bottom: 5px;
-            }
-        }
+    // Chunky lists (used on the CV page, for exmaple)
+    &.big-list > ul {
+      list-style: none inside none;
+      margin-bottom: 25px;
     }
 
+    &.big-list > ul > li > p:last-child {
+      margin-bottom: 0px;
+    }
+
+    &.big-list > ul > li > ul {
+      padding-left: 30px;
+      margin-bottom: 25px;
+    }
+
+    &.big-list > ul > li > ul > li {
+      margin-bottom: 5px;
+    }
+  }
+
+  img {
+    padding: 1px;
+    margin: 15px;
+    background-color: #B4B4B4;
+    border: 1px solid #242323;
+    #utils > .box-shadow(0 3px 5px rgba(0, 0, 0, 0.3));
+  }
+
+  .left {
     img {
-        padding: 1px;
-        margin: 15px;
-        background-color: #B4B4B4;
-        border: 1px solid #242323;
-        #utils > .box-shadow(0 3px 5px rgba(0, 0, 0, 0.3));
+      float: left;
     }
+  }
 
-    .left {
-        img {
-            float: left;
-        }
+  .right {
+    img {
+      float: right;
     }
+  }
 
-    .right {
-        img {
-            float: right;
-        }
-    }
+  pre {
+    background-color: #242323;
+    border: 1px dashed #B4B4B4;
+    padding: 10px;
+    margin-bottom: 25px;
+  }
 
-    pre {
-        background-color: #242323;
-        border: 1px dashed #B4B4B4;
-        padding: 10px;
-        margin-bottom: 25px;
-    }
-
-    a::selection, a::-moz-selection {
-        background: #242323;
-    }
+  a::selection, a::-moz-selection {
+    background: #242323;
+  }
 }
 
 
@@ -342,164 +342,171 @@ body.portfolio .header .nav li.portfolio a {
 // Footer
 //
 .footer {
-    margin-bottom: 100px;
+  margin-bottom: 100px;
 
-    a:hover {
-        text-decoration: underline;
+  a:hover {
+    text-decoration: underline;
+  }
+
+  // Twitter
+  .twitter {
+    overflow: hidden;
+    margin-bottom: 50px;
+    width: 100%;
+
+    .icon {
+      float: left;
     }
 
-    // Twitter
-    .twitter {
-        overflow: hidden;
-        margin-bottom: 50px;
-        width: 100%;
+    // Tweet box
+    .tweet {
+      position: relative;
+      float: right;
+      width: 780px;
+      overflow: visible;
+      background-color: @darkGrey;
+      background-color: rgba(255, 255, 255, 0.1);
+      #utils > .border-radius(5px);
 
-        .icon {
-            float: left;
-        }
+      .arrow {
+        position: absolute;
+        left: -8px;
+        top: 12px;
+        width: 0;
+        height: 0;
+        border-top: 8px solid transparent;
+        border-bottom: 8px solid transparent; 
+        border-right: 8px solid #3c3b3b;
+      }
 
-        // Tweet box
-        .tweet {
-            position: relative;
-            float: right;
-            width: 780px;
-            overflow: visible;
-            background-color: @darkGrey;
-            background-color: rgba(255, 255, 255, 0.1);
-            #utils > .border-radius(5px);
-
-            .arrow {
-                position: absolute;
-                left: -8px;
-                top: 12px;
-                width: 0;
-                height: 0;
-                border-top: 8px solid transparent;
-                border-bottom: 8px solid transparent; 
-                border-right: 8px solid #3c3b3b;
-            }
-
-            p {
-                padding: 10px 15px;
-                float: left;
-                text-align: left;
-                clear: none;
-            }
-        }
-
-        p {
-            clear: right;
-            float: right;
-            text-align: right;
-            padding: 10px 0 2px 0;
-
-            &.date {
-                padding: 0;
-                color: @blue;
-                font-family: @monaco;
-                font-size: 10px;
-            }
-        }
-    }
-
-    // Contact
-    .contact {
-        background-color: #5f8789;
-        background-color: rgba(139,250,255,0.2);
+      p {
+        padding: 10px 15px;
         float: left;
-        padding-bottom: 10px;
-        margin: 0 0 5px 5px;
-        width: 375px;
-        #utils > .border-radius(5px);
-        #utils > .box-shadow(0px 1px 4px #111);
+        text-align: left;
+        clear: none;
+      }
+    }
 
-        h1 {
-            background-color: #000;
-            text-align: center;
-            padding: 5px;
-            font-weight: normal;
-            font-size: 12px;
-            line-height: 15px;
-            margin-bottom: 20px;
-            #utils > .border-radius(5px 5px 0 0);
-            #utils > .box-shadow(0px 1px 1px #000);
+    p {
+      clear: right;
+      float: right;
+      text-align: right;
+      padding: 10px 0 2px 0;
 
-            background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#000), to(#141414));
-            background: -moz-linear-gradient(top, #141414, #000);
-            background: -webkit-linear-gradient(top, #141414, #000);
-            background: -ms-linear-gradient(top, #141414, #000);
-            background: -o-linear-gradient(top, #141414, #000);
-        }
+      &.date {
+        padding: 0;
+        color: @blue;
+        font-family: @monaco;
+        font-size: 10px;
+      }
+    }
+  }
+
+  // Contact
+  .contact {
+    background-color: #5f8789;
+    background-color: rgba(139,250,255,0.2);
+    float: left;
+    padding-bottom: 10px;
+    margin: 0 0 5px 5px;
+    width: 375px;
+    #utils > .border-radius(5px);
+    #utils > .box-shadow(0px 1px 4px #111);
+
+    h1 {
+      background-color: #000;
+      text-align: center;
+      padding: 5px;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 15px;
+      margin-bottom: 20px;
+      #utils > .border-radius(5px 5px 0 0);
+      #utils > .box-shadow(0px 1px 1px #000);
+
+      background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#000), to(#141414));
+      background: -moz-linear-gradient(top, #141414, #000);
+      background: -webkit-linear-gradient(top, #141414, #000);
+      background: -ms-linear-gradient(top, #141414, #000);
+      background: -o-linear-gradient(top, #141414, #000);
+    }
+    
+    p {
+      font-family: Monaco, monospace;
+      margin: 0 20px 10px 20px;
+      text-shadow: 0px 0px 4px #000;
+    }
+  }
+
+  // Credits
+  .credits {
+    width: 380px;
+    float: right;
+
+    p {
+      font-size: 12px;
+      color: #8f8f8f;
+    }
+
+    a {
+      color: @lime;
+
+      &:hover {
+        text-shadow: 0px 0px 3px @lime;
+      }
+
+      &.humans {
+        color: @orange;
         
-        p {
-            font-family: Monaco, monospace;
-            margin: 0 20px 10px 20px;
-            text-shadow: 0px 0px 4px #000;
+        &:hover {
+          color: @orange;
+          text-shadow: 0px 0px 3px @orange;
         }
+      }
     }
 
-    // Credits
-    .credits {
-        width: 380px;
-        float: right;
+    .logos {
+      margin: 20px 0;
+      overflow: hidden;
 
-        p {
-            font-size: 12px;
-            color: #8f8f8f;
+      img, p {
+        float: left;
+        margin-right: 20px;
+      }
+
+      img {
+        opacity: 0.7;
+        filter: alpha(opacity=70); 
+        #utils > .transition(opacity, ease-in-out, 300ms);
+      }
+
+      p {
+        line-height: 26px;
+      }
+
+      .and {
+        margin-top: 23px;
+      }
+
+      .less {
+        margin-top: 24px;
+      }
+
+      a:hover {
+        img {
+          opacity: 1.0;
+          filter: alpha(opacity=100); 
         }
-
-        a {
-            color: @lime;
-
-            &:hover {
-                text-shadow: 0px 0px 3px @lime;
-            }
-
-            &.humans {
-                color: @orange;
-                
-                &:hover {
-                    color: @orange;
-                    text-shadow: 0px 0px 3px @orange;
-                }
-            }
-        }
-
-        .logos {
-            margin: 20px 0;
-            overflow: hidden;
-
-            .less {
-                margin-top: 2px;
-            }
-
-            img, p {
-                float: left;
-                margin-right: 20px;
-                line-height: 26px;
-            }
-
-            img {
-                opacity: 0.7;
-                filter: alpha(opacity=70); 
-                #utils > .transition(opacity, ease-in-out, 300ms);
-            }
-
-            a:hover {
-                img {
-                    opacity: 1.0;
-                    filter: alpha(opacity=100); 
-                }
-            }
-        }
-
-        p.left, p.right {
-            font-size: 10px;
-            float: left;
-        }
-
-        p.right {
-            float: right;
-        }
+      }
     }
+
+    p.left, p.right {
+      font-size: 10px;
+      float: left;
+    }
+
+    p.right {
+      float: right;
+    }
+  }
 }

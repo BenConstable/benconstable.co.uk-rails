@@ -1,50 +1,56 @@
 - content_for :body do
+  %header.header.container
+    = link_to image_tag('logo.png', :alt => 'Ben Constable'), root_path
 
-    %header.header.container
-        = link_to image_tag('logo.png', :alt => 'Ben Constable'), root_path
+    %p All purpose programmer from Brighton, UK_
 
-        %p All purpose programmer from Brighton, UK_
+    %ul.nav
+      %li.home= link_to 'About me', root_path
+      %li.portfolio= link_to 'Portfolio', portfolio_path
+      %li.cv= link_to 'CV', cv_path
+
+  .main-content-wrapper
+    %article.main-content.container
+      = yield :content
+
+  %footer.footer.container
+    %section.twitter
+      = image_tag 'twitter-icon.png', :alt => 'Twitter', :class => 'icon'
+
+      .tweet
+        .arrow
         
-        %ul.nav
-            %li.home= link_to 'About me', root_path
-            %li.portfolio= link_to 'Portfolio', portfolio_path
-            %li.cv= link_to 'CV', cv_path
-
-    .main-content-wrapper
-        %article.main-content.container
-            = yield :content
-
-    %footer.footer.container
-        %section.twitter
-            = image_tag 'twitter-icon.png', :alt => 'Twitter', :class => 'icon'
-
-            .tweet
-                .arrow
-                %p
-                    != latest_tweet
-            %p
-                %a{:href => 'https://twitter.com/#!/brconstable', :target => '_blank'} @brconstable
-            %p.date
-                = latest_tweet_time
+        %p
+          != latest_tweet
         
-        %section.contact
-            %h1 Contact details
-            %p $ Email: ben@benconstable.co.uk
+      %p
+        %a{:href => 'https://twitter.com/#!/brconstable', :target => '_blank'} @brconstable
       
-        %section.credits
-            %p This site was built by Ben Constable in 2011, with a little help from:
+      %p.date
+        = latest_tweet_time
+
+    %section.contact
+      %h1 Contact details
+
+      %p $ Email: ben@benconstable.co.uk
+
+    %section.credits
+      %p
+        This site was built by Ben Constable in #{Time.new.year}, with a little help from:
+      
+      .logos
+        %a{:href => 'http://rubyonrails.org/', :target => '_blank'}= image_tag 'rails-icon.png', :alt => 'Rails', :class => 'rails'
         
-            .logos
-                %a{:href => 'http://symfony.com/', :target => '_blank'}= image_tag 'symfony-icon.png', :alt => 'Symfony'
-                %p and
-                %a{:href => 'http://lesscss.org/', :target => '_blank'}= image_tag 'less-icon.png', :alt => 'LESS', :class => 'less'
+        %p.and and
         
-            %p.left
-                (Design by
-                %a{:href => 'http://bengourley.co.uk', :target => '_blank'} Ben Gourley
-                )
-        
-            %p.right
-                %a.humans{:href => '/humans.txt'} humans.txt
+        %a{:href => 'http://lesscss.org/', :target => '_blank'}= image_tag 'less-icon.png', :alt => 'LESS', :class => 'less'
+      
+      %p.left
+        (Design by
+        %a{:href => 'http://bengourley.co.uk', :target => '_blank'} Ben Gourley
+        )
+      
+      %p.right
+        %a.humans{:href => '/humans.txt'} humans.txt
 
 = parent_layout 'application'

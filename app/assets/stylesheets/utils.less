@@ -2,35 +2,35 @@
 // Utility mixins
 //
 #utils {
-    .transition (@properties, @easing, @duration) {
-        -webkit-transition-property: ~"@{properties}";
-        -webkit-transition-timing-function: @easing;
-        -webkit-transition-duration: @duration;
+  .transition (@properties, @easing, @duration) {
+    -webkit-transition-property: ~"@{properties}";
+    -webkit-transition-timing-function: @easing;
+    -webkit-transition-duration: @duration;
 
-        -moz-transition-property: ~"@{properties}";
-        -moz-transition-timing-function: @easing;
-        -moz-transition-duration: @duration;
+    -moz-transition-property: ~"@{properties}";
+    -moz-transition-timing-function: @easing;
+    -moz-transition-duration: @duration;
 
-        -o-transition-property: ~"@{properties}";
-        -o-transition-timing-function: @easing;
-        -o-transition-duration: @duration;
+    -o-transition-property: ~"@{properties}";
+    -o-transition-timing-function: @easing;
+    -o-transition-duration: @duration;
 
-        transition-property: ~"@{properties}";
-        transition-timing-function: @easing;
-        transition-duration: @duration;
-    }
+    transition-property: ~"@{properties}";
+    transition-timing-function: @easing;
+    transition-duration: @duration;
+  }
 
-    .box-shadow (...) {
-        -webkit-box-shadow: @arguments;
-        -moz-box-shadow: @arguments;
-        -o-box-shadow: @arguments;
-        box-shadow: @arguments;
-    }
+  .box-shadow (...) {
+    -webkit-box-shadow: @arguments;
+    -moz-box-shadow: @arguments;
+    -o-box-shadow: @arguments;
+    box-shadow: @arguments;
+  }
 
-    .border-radius (...) {
-        -webkit-border-radius: @arguments;
-        -moz-border-radius: @arguments;
-        -o-border-radius: @arguments;
-        border-radius: @arguments;
-    }
+  .border-radius (...) {
+    -webkit-border-radius: @arguments;
+    -moz-border-radius: @arguments;
+    -o-border-radius: @arguments;
+    border-radius: @arguments;
+  }
 }

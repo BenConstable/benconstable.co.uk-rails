@@ -1,28 +1,25 @@
 - content_for :body_class do
-    home
+  home
 
 - content_for :content do
+  %h1 I'm a programmer, mostly…
 
-    %h1 I'm a programmer, mostly…
-
-    %section.full-width.bottom
+  %section.full-width.bottom
+    .left
+      :markdown
+        I am a programmer from Brighton, UK. Since completing my BSc Computer
+        Science at the University of Sussex I have been working as a web
+        developer in various agencies in the Brighton area.
         
-        .left
-            %p
-                I am a programmer from Brighton, UK. Last year I completed a degree at the University of Sussex, where I gained a BSc Computer Science, First Class Honours.
-            
-            %p
-                I currently work as a professional web developer for a small media company in Brighton. I love keeping up with latest technologies in web development, and you can find the source for this site <a href="https://github.com/BenConstable/benconstable.co.uk" target="_blank">on Github</a>. It's built on the <a href="http://symfony.com/" target="_blank">Symfony 2</a> framework, and makes use of a selfmade PHP build tool called <a href="https://github.com/BenConstable/Compose" target="_blank">Compose</a>.
-    
-        .right
-            %p
-                My other passion lies in video games. This harks back to the early days of the N64 (F-Zero X, anyone?), which ensured I was hooked enough to carry on playing incessantly for about 15 years and take a stab at making games myself. Because of this, I am an avid C++ programmer and am currently working on a <a href="https://github.com/BenConstable/Sangwin-Game-Engine" target="_blank">C++ game engine for Android</a> that I built for my university dissertation.
+        I currently work as a developer for [3ev](http://3ev.com/), an [award-winning agency](http://www.3ev.com/our-clients/the-chemical-brothers/) based
+        in Hove. Working at 3ev gives me a great platform to improve my skillset and try out a lot of new things.
 
-            %p
-                If you'd like to find out more about me and what I do, have a look at my
-                = link_to 'CV', cv_path
-                and
-                = link_to 'Portfolio', portfolio_path
-                \. I can be easily contacted using the details below, and am always open to new opportunities. Feel free to <a href="https://twitter.com/#!/brconstable" target="_blank">follow me on Twitter</a>, I'll happily reciprocate the favour!
+        I take pride in keeping up with latest technologies. You can find the source for this site [on GitHub](https://github.com/BenConstable/benconstable.co.uk-rails). It runs on [Rails](http://rubyonrails.org/), and uses [lots of different things](https://github.com/BenConstable/benconstable.co.uk-rails#whats-used) to work in the most efficient way possible.
+
+    .right
+      :markdown
+        My other passion lies in video games. This harks back to the early days of the N64 (F-Zero X, anyone?), which ensured I was hooked enough to carry on playing incessantly for about 15 years and take a stab at making games myself. I built a [C++ game engine](https://github.com/BenConstable/Sangwin-Game-Engine) for my degree dissertation, and am very interested in building browser-based games using Javascript.
+
+        If you'd like to find out more about me and what I do, have a look at my [CV](#{cv_path}) and [Portfolio](#{portfolio_path}). I can be easily contacted using the details below, and am always open to new opportunities. Feel free to [follow me on Twitter](http://twitter.com/brconstable), I'll happily reciprocate the favour!
 
 = parent_layout 'base'
