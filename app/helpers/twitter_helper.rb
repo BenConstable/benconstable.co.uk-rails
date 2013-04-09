@@ -49,7 +49,7 @@ module TwitterHelper
     end
 
     tweet.user_mentions.each do |mention|
-      text["@#{mention.screen_name}"] = "<a href=\"http:twitter.com/#{mention.screen_name}\" target=\"_blank\">@#{mention.screen_name}</a>"
+      text["@#{mention.screen_name}"] = "<a href=\"http://twitter.com/#{mention.screen_name}\" target=\"_blank\">@#{mention.screen_name}</a>"
     end
 
     tweet.hashtags.each do |hashtag|
