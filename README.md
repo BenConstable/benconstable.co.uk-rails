@@ -37,4 +37,4 @@ This site is built on Ruby on Rails, and is targeted at Heroku (although it shou
 - [The Twitter API](https://dev.twitter.com/) and its [Gem](http://sferik.github.com/twitter/)
 - [Dalli](https://github.com/mperham/dalli) for Memcache integration
 - [Less](http://lesscss.org/) and its [Gem](https://github.com/metaskills/less-rails)
-- [Haml](http://haml.info/)
+- [Haml](http://haml.info/) with [Maruku](https://github.com/bhollis/maruku) for embedding Markdown
