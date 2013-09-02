@@ -59,6 +59,7 @@ GEM
       treetop (~> 1.4.8)
     maruku (0.6.1)
       syntax (>= 1.0.0)
+    memcachier (0.0.2)
     mime-types (1.19)
     multi_json (1.5.0)
     multipart-post (1.1.5)
@@ -124,6 +125,7 @@ DEPENDENCIES
   jquery-rails
   less-rails
   maruku
+  memcachier
   rails (= 3.2.11)
   therubyracer
   thin
