@@ -4,8 +4,7 @@ This site is built on Ruby on Rails, and is targeted at Heroku (although it shou
 
 ## Installing
 
-- If you're using RVM, the included `.rvmrc` file will ensure that you're using the right Ruby version, and that your Gems remain isolated. Just `cd` to the app root to setup Ruby and create a Gemset for the app
-- If not, the app requires Ruby 1.9.2
+- The app requires Ruby 1.9.2-p320
 - Run `bundle install`
 
 ## Starting
