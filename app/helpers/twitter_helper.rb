@@ -12,8 +12,15 @@ module TwitterHelper
 
   # Get the latest Tweet. Cache for 1 hour to avoid the rate limit
   def get_tweet
+    client = Twitter::REST::Client.new do |config|
+      config.consumer_key        = ENV['TWITTER_CONSUMER_KEY']
+      config.consumer_secret     = ENV['TWITTER_CONSUMER_SECRET']
+      config.access_token        = ENV['TWITTER_OAUTH_TOKEN']
+      config.access_token_secret = ENV['TWITTER_OAUTH_SECRET']
+    end
+
     Rails.cache.fetch('latest_tweet', :expires_in => 1.hour) do
-      Twitter.user_timeline('brconstable').first
+      client.user_timeline('brconstable').first
     end
   end
   
@@ -42,7 +49,7 @@ module TwitterHelper
 
   # Add links to Tweet entities
   def add_entities(tweet)
-    text = tweet.text
+    text = tweet.text.dup
 
     tweet.urls.each do |url|
       text[url.url] = "<a href=\"#{url.url}\" target=\"_blank\">#{url.display_url}</a>"
