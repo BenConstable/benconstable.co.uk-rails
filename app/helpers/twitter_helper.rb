@@ -23,13 +23,13 @@ module TwitterHelper
       client.user_timeline('brconstable').first
     end
   end
-  
+
   # From the given time, get a nicely formatted 'seconds/minutes/days ago'
   # string
   def ago(time)
     now = Time.new
     diff = (now - time)
-      
+
     case
     when (diff < 1.minute)
       format_denomination('second', diff.to_i)
@@ -52,17 +52,17 @@ module TwitterHelper
     text = tweet.text.dup
 
     tweet.urls.each do |url|
-      text[url.url] = "<a href=\"#{url.url}\" target=\"_blank\">#{url.display_url}</a>"
+      text.sub! url.url.to_s, "<a href=\"#{url.url}\" target=\"_blank\">#{url.display_url}</a>"
     end
 
     tweet.user_mentions.each do |mention|
-      text["@#{mention.screen_name}"] = "<a href=\"http://twitter.com/#{mention.screen_name}\" target=\"_blank\">@#{mention.screen_name}</a>"
+      text.sub! "@#{mention.screen_name}", "<a href=\"http://twitter.com/#{mention.screen_name}\" target=\"_blank\">@#{mention.screen_name}</a>"
     end
 
     tweet.hashtags.each do |hashtag|
-      text["\##{hashtag.text}"] = "<a href=\"http://twitter.com/search?q=%23#{hashtag.text}\" target=\"_blank\">\##{hashtag.text}</a>"
+      text.sub! "\##{hashtag.text}", "<a href=\"http://twitter.com/search?q=%23#{hashtag.text}\" target=\"_blank\">\##{hashtag.text}</a>"
     end
-    
+
     text
   end
 end
