@@ -21,7 +21,7 @@ This site is built on Ruby on Rails, and is targeted at Heroku (although it shou
     TWITTER_OAUTH_SECRET=xxxx
     TWITTER_OAUTH_TOKEN=xxxx
     ```
-- Start the app with `foreman start --procfile="Procfile-development" --port=3000`
+- Start the app with `foreman start`
 
 ## Deploying to Heroku
 
