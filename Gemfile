@@ -2,30 +2,33 @@ source 'https://rubygems.org'
 
 ruby '1.9.2'
 
-gem 'rails', '3.2.11'
+# Defaults
 
-# Gems used only for assets and not required
-# in production environments by default.
+gem 'rails', '~> 3.2'
+gem 'jquery-rails', '~> 3.0'
+gem 'twitter', '~> 5.0'
+gem 'haml', '~> 4.0'
+gem 'dalli', '~> 2.6'
+gem 'memcachier'
+gem 'maruku', '~> 0.7'
+
+# Asset Gems
+
 group :assets do
-  gem 'therubyracer', :platforms => :ruby
-  gem 'less-rails'
-  gem 'uglifier', '>= 1.0.3'
+  gem 'therubyracer', '~> 0.12', :platforms => :ruby
+  gem 'less-rails', '~> 2.5'
+  gem 'uglifier', '~> 2.5'
 end
 
-gem 'jquery-rails'
-gem 'twitter'
-gem 'haml'
-gem 'dalli'
-gem 'memcachier'
-gem 'maruku'
+# Install Foreman in development
 
-# Install foreman in development
 group :development do
-  gem 'foreman'
+  gem 'foreman', '~> 0.63'
 end
 
 # Use Thin in Production, for Heroku
+
 group :production do
-  gem 'thin'
+  gem 'thin', '~> 1.6'
   gem 'rails_12factor'
 end
