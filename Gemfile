@@ -20,4 +20,5 @@ gem 'maruku'
 # Use Thin in Production, for Heroku
 group :production do
   gem 'thin'
+  gem 'rails_12factor'
 end
