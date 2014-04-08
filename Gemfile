@@ -19,6 +19,11 @@ gem 'dalli'
 gem 'memcachier'
 gem 'maruku'
 
+# Install foreman in development
+group :development do
+  gem 'foreman'
+end
+
 # Use Thin in Production, for Heroku
 group :production do
   gem 'thin'

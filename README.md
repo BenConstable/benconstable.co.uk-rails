@@ -9,7 +9,6 @@ This site is built on Ruby on Rails, and is targeted at Heroku (although it shou
 
 ## Starting
 
-- Make sure you have [foreman](http://ddollar.github.com/foreman/) installed
 - Create a `.env` file in the app root. This file needs the following config at a minimum:
 
     ```
@@ -21,7 +20,7 @@ This site is built on Ruby on Rails, and is targeted at Heroku (although it shou
     TWITTER_OAUTH_SECRET=xxxx
     TWITTER_OAUTH_TOKEN=xxxx
     ```
-- Start the app with `foreman start`
+- Start the app with `bundle exec foreman start`
 
 ## Deploying to Heroku
 
