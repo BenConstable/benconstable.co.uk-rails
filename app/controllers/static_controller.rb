@@ -4,10 +4,6 @@ class StaticController < ApplicationController
   def home
   end
 
-  # Portfolio page
-  def portfolio
-  end
-
   # CV page
   def cv
   end

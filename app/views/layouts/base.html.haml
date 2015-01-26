@@ -6,8 +6,8 @@
 
     %ul.nav
       %li.home= link_to 'About me', root_path
-      %li.portfolio= link_to 'Portfolio', portfolio_path
       %li.cv= link_to 'CV', cv_path
+      %li= link_to 'Github', 'https://github.com/BenConstable'
 
   .main-content-wrapper
     %article.main-content.container
@@ -19,13 +19,13 @@
 
       .tweet
         .arrow
-        
+
         %p
           != latest_tweet
-        
+
       %p
         %a{:href => 'https://twitter.com/#!/brconstable', :target => '_blank'} @brconstable
-      
+
       %p.date
         = latest_tweet_time
 
@@ -37,19 +37,19 @@
     %section.credits
       %p
         This site was built by Ben Constable in #{Time.new.year}, with a little help from:
-      
+
       .logos
         %a{:href => 'http://rubyonrails.org/', :target => '_blank'}= image_tag 'rails-icon.png', :alt => 'Rails', :class => 'rails'
-        
+
         %p.and and
-        
+
         %a{:href => 'http://lesscss.org/', :target => '_blank'}= image_tag 'less-icon.png', :alt => 'LESS', :class => 'less'
-      
+
       %p.left
         (Design by
         %a{:href => 'http://bengourley.co.uk', :target => '_blank'} Ben Gourley
         )
-      
+
       %p.right
         %a.humans{:href => '/humans.txt'} humans.txt
 
