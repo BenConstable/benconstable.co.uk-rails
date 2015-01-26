@@ -10,3 +10,6 @@
 
 # Foreman
 /.env
+
+# Ignore generated assets
+/public/assets
