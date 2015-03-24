@@ -10,11 +10,11 @@
     Designer: Ben Gourley
     Site: http://bengourley.co.uk
     Twitter: @bengourley
-    Location: Brighton, United Kingdom
+    Location: Cowes, United Kingdom
 
 /* SITE */
-    Last update: 2013/02/04
+    Last update: 2015/24/03
     Doctype: HTML5
     Standards: HTML5, CSS3, Ruby 1.9.3
     Components: jQuery, Rails, LESS
-    Software: Sublime Text 2, Git, Mac OSX, Heroku, Photoshop CS4
+    Software: Sublime Text, Git, Mac OSX, Heroku
