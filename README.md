@@ -4,7 +4,7 @@ This site is built on Ruby on Rails, and is targeted at Heroku (although it shou
 
 ## Installing
 
-- The app requires Ruby 1.9.2-p320
+- The app requires Ruby 2.0.0-p648
 - Run `bundle install`
 
 ## Starting
