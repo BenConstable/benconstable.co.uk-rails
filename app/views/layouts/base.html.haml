@@ -14,21 +14,6 @@
       = yield :content
 
   %footer.footer.container
-    %section.twitter
-      = image_tag 'twitter-icon.png', :alt => 'Twitter', :class => 'icon'
-
-      .tweet
-        .arrow
-
-        %p
-          != latest_tweet
-
-      %p
-        %a{:href => 'https://twitter.com/#!/brconstable', :target => '_blank'} @brconstable
-
-      %p.date
-        = latest_tweet_time
-
     %section.contact
       %h1 Contact details
 
