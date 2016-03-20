@@ -2,12 +2,12 @@
   %header.header.container
     = link_to image_tag('logo.png', :alt => 'Ben Constable'), root_path
 
-    %p All purpose programmer from Brighton, UK_
+    %p Software developer from Brighton, UK_
 
     %ul.nav
-      %li.home= link_to 'About me', root_path
+      %li.home= link_to 'About Me', root_path
       %li.cv= link_to 'CV', cv_path
-      %li= link_to 'Github', 'https://github.com/BenConstable'
+      %li= link_to 'GitHub', 'https://github.com/BenConstable'
 
   .main-content-wrapper
     %article.main-content.container
@@ -15,26 +15,14 @@
 
   %footer.footer.container
     %section.contact
-      %h1 Contact details
+      %h1 Contact
 
       %p $ Email: ben@benconstable.co.uk
+      %p $ Phone: +44 (0)7813 073964
+      %p $ Twitter: <a href="http://twitter.com/brconstable">@brconstable</a>
 
     %section.credits
-      %p
-        This site was built by Ben Constable in #{Time.new.year}, with a little help from:
-
-      .logos
-        %a{:href => 'http://rubyonrails.org/', :target => '_blank'}= image_tag 'rails-icon.png', :alt => 'Rails', :class => 'rails'
-
-        %p.and and
-
-        %a{:href => 'http://lesscss.org/', :target => '_blank'}= image_tag 'less-icon.png', :alt => 'LESS', :class => 'less'
-
       %p.thanks
-        (Design by
-        %a{:href => 'http://bengourley.co.uk', :target => '_blank'} Ben Gourley,
-        see
-        %a.humans{:href => '/humans.txt'} humans.txt
-        )
+        This site was built by Ben Constable in #{Time.new.year}, with a little help from <a href="http://rubyonrails.org/">Ruby on Rails</a>. Design by my good friend <a href="https://bengourley.co.uk">Ben Gourley</a>.
 
 = parent_layout 'application'
